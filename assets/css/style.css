@@ -171,16 +171,18 @@ form{
 label, input, textarea{
 	width:100%;
 	margin-bottom:5px;
-	border: 1px solid #ddd;
+	
 }
 
 input{
 	padding:10px;
 	margin-bottom: 10px
+	border: 1px solid #ddd;
 }
 
 textarea{
 	height:200px;
+	border: 1px solid #ddd;
 }
 
 button{
