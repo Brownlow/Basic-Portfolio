@@ -1,5 +1,5 @@
 body{
-
+	
 }
 
 .content{
@@ -9,13 +9,15 @@ body{
 
 header{
 	background-color: #fff;
-	border:1px solid #999;
-	margin-bottom: 30px;
+	border-bottom:1px solid #999;
+	height: 80px;
 }
 
 header .logo{
-	background-color:turquoise;
-	width:300px;
+	background-color: #4aaaa5;
+    width: max-content;
+    padding: 20px;
+    display:inline-block;
 }
 
 header .logo a{
@@ -26,26 +28,56 @@ header .logo a{
 
 header nav{
 	float:right;
+	margin-top:25px;
 }
 
 header nav li{
 	display:inline;
 }
 
+header nav li a {
+	color:#ccc;
+	text-align:center;
+	padding:0 10px;
+	border-right:1px solid #ccc;
+	text-decoration: none;
+}
+
+header nav li a:last-child {
+	border-right:0;
+}
+
 h1{
-	font-size:30;
+	font-size:30px;
 	padding-bottom:20px;
-	border-bottom:2px solid #999;
+	border-bottom:2px solid #ddd;
 	width:auto;
 	margin-bottom:20px;
+	color:#4aaaa5;
 }
 
 h2{
-	font-size:24;
+	font-size:24px;
+	padding-bottom:20px;
+	border-bottom:2px solid #ddd;
+	color:#4aaaa5;
 }
 
 h3{
-	font-size:22;
+	font-size:22px;
+}
+
+.body{
+	background-image: url("../images/concrete_seamless.png");
+	width:100%;
+	display:inline-block;
+	padding:30px 0;
+	min-height: 100%;
+}
+
+.body p, .body label{
+	font-family:sans-serif;
+	color:#666;
 }
 
 .mainContent{
@@ -75,19 +107,99 @@ h3{
 	padding:20px;
 }
 
+.sidebar ul{
+	margin-top:20px;
+}
+
 .sidebar li{
 	display:inline;
 }
 .sidebar li a img{
-	width:24px;
+	width:48px;
 }
 
+/*   Portfolio   */
+
+.p1{
+	background-image: url("../images/cat.jpg");
+	background-size: 305px;
+}
+.p2{
+	background-image: url("../images/dog.jpg");
+	background-size: 305px;
+}
+.p3{
+	background-image: url("../images/godzilla.jpg");
+	background-size: 357px;
+}
+.p4{
+	background-image: url("../images/leopard.jpg");
+	background-size: 430px;
+}
+
+.portfolioItem{
+	width:48%;
+	height:200px;
+	margin-bottom:20px;
+}
+
+.titleBlock p{
+	background-color:#4aaaa5;
+	color:#fff;
+	text-align:center;
+	margin-top:100px;
+	padding:20px;
+}
+
+.left{
+	float:left;
+	margin-right:10px;
+}
+
+.right{
+	float:right;
+	margin-left:10px;
+}
+
+
+/*   Form   */
+
+form{
+	font-family: sans-serif;
+}
+
+label, input, textarea{
+	width:100%;
+	margin-bottom:5px;
+	border: 1px solid #ddd;
+}
+
+input{
+	padding:10px;
+	margin-bottom: 10px
+}
+
+textarea{
+	height:200px;
+}
+
+button{
+	background-color:#4aaaa5;
+	padding:10px;
+	color:#fff;
+	margin-top:10px;
+	border:0;
+}
+
+
 footer{
-	display:none;
-	border-top: 3px solid green;
-	background-color:grey;
+	border-top: 5px solid #4aaaa5;
+	background-color:#666;
 	color:#fff;
 	height:100px;
-	vertical-align: bottom
+	clear:both;
+	text-align:center;
+	padding:20px;
+	font-family:sans-serif;
 
 }
